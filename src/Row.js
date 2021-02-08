@@ -9,7 +9,7 @@ export default class Row extends Component {
     animated: PropTypes.bool,
     disabled: PropTypes.bool,
     horizontal: PropTypes.bool,
-    style: ViewPropTypes.style,
+    style: Animated.View.propTypes ? Animated.View.propTypes.style : null,
     location: PropTypes.shape({
       x: PropTypes.number,
       y: PropTypes.number,
